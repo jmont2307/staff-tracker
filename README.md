@@ -76,8 +76,4 @@ node index.js
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Questions
 
-If you have any questions about the repository, open an issue or contact me directly at:
-- GitHub: [yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
