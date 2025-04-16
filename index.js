@@ -636,12 +636,37 @@ async function viewDepartmentBudget() {
 
 // Display welcome message and start application
 console.log(`
-TPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPW
-Q                                                               Q
-Q                EMPLOYEE MANAGEMENT SYSTEM                     Q
-Q                                                               Q
-ZPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP]
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║                EMPLOYEE MANAGEMENT SYSTEM                     ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
 `);
 
+// Initialize database and start the application
+async function init() {
+  try {
+    // Check connection to the database
+    const connected = await db.checkConnection();
+    if (!connected) {
+      console.error('\nCould not connect to the database. Please check your PostgreSQL configuration and try again.\n');
+      process.exit(1);
+    }
+    
+    // Initialize the database
+    const initialized = await db.initializeDatabase();
+    if (!initialized) {
+      console.error('\nCould not initialize the database. Please check your PostgreSQL configuration and try again.\n');
+      process.exit(1);
+    }
+    
+    // Start the main menu
+    await mainMenu();
+  } catch (err) {
+    console.error('Fatal error initializing application:', err);
+    process.exit(1);
+  }
+}
+
 // Start the application
-mainMenu();
+init();
