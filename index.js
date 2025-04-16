@@ -98,12 +98,13 @@ async function mainMenu() {
         console.log('Goodbye!');
         process.exit(0);
     }
+
+    // Return to main menu after action completes
+    await mainMenu();
   } catch (err) {
     console.error('An error occurred:', err);
+    process.exit(1);
   }
-  
-  // Return to main menu after action completes
-  await mainMenu();
 }
 
 // View all departments
@@ -659,6 +660,8 @@ async function init() {
       console.error('\nCould not initialize the database. Please check your PostgreSQL configuration and try again.\n');
       process.exit(1);
     }
+    
+    console.log('Database connection successful!');
     
     // Start the main menu
     await mainMenu();

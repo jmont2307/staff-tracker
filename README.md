@@ -21,7 +21,7 @@ This Employee Tracker is a Content Management System (CMS) that allows business 
 
 1. Clone the repository to your local machine:
 ```
-git clone https://github.com/yourusername/staff-tracker.git
+git clone https://github.com/jmont2307/staff-tracker
 cd staff-tracker
 ```
 
