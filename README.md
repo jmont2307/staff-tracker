@@ -60,9 +60,6 @@ node index.js
 
 [Link to video demonstration](your_video_link_here)
 
-## Screenshots
-
-![Employee Tracker Main Menu](screenshot_link_here)
 
 ## Technologies Used
 
@@ -75,9 +72,3 @@ node index.js
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Questions
-
-If you have any questions about the repository, open an issue or contact me directly at:
-- GitHub: [yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
