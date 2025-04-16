@@ -69,6 +69,13 @@ node index.js
 - console.table
 - dotenv
 
+## Credits
+
+This project was created with assistance from:
+- Online Learning Assistant
+- Claude AI
+- Various YouTube videos
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
