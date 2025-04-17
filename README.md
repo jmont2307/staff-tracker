@@ -58,7 +58,7 @@ node index.js
 
 ## Demo
 
-[Link to video demonstration](your_video_link_here)
+[Link to video demonstration](https://app.screencastify.com/v3/watch/6F3wN8nYWwMXcmnO3UkF)
 
 
 ## Technologies Used
